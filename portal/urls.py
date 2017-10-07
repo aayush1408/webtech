@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-	url(r'^opportunity/',include('opportunity.urls',namespace='opportunity')),
+    url(r'^opportunity/', include('opportunity.urls',
+        namespace='opportunity')),
     url(r'^admin/', admin.site.urls),
 ]
